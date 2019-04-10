@@ -10,10 +10,13 @@ def loop_iterator(number_of_times)
   #  phrase and break when the counter hits the appropriate number...
   phrase = "Welcome to Flatiron School's Web Development Course!"
 
+   counter = 0
   loop do
+    counter += 1
     puts phrase
-    break if phrase <= 7
+    break if counter >= 7
 end
+end 
 
 def times_iterator(number_of_times)
   # code your solution here using the "times" keyword
@@ -22,13 +25,16 @@ def times_iterator(number_of_times)
  7.times do
    puts phrase
 end
+end
 
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
   phrase = "Welcome to Flatiron School's Web Development Course!"
 
-while counter < 7 do
+  counter = 0 
+  
+while counter < 7 
   puts phrase
   counter += 1
 end
@@ -52,4 +58,5 @@ def for_iterator(number_of_times)
 
   for counter in 1..7 do
     puts phrase
+end
 end
